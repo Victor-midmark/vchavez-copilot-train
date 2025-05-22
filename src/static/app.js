@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <ul class="participants-list">
               ${
                 details.participants.length > 0
-                  ? details.participants.map(p => `<li>${p}</li>`).join("")
+                  ? details.participants.map(p => `<li>${escapeHTML(p)}</li>`).join("")
                   : `<li><em>No participants yet</em></li>`
               }
             </ul>
